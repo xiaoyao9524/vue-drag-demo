@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "v-simple-drag": "D:\\Demo\\Vue\\插件Demo\\v-simple-drag\\v-simple-drag-0.0.31.tgz",
+    "v-simple-drag": "D:\\Demo\\Vue\\插件Demo\\v-simple-drag\\v-simple-drag-0.0.341.tgz",
     "vue": "^2.6.10"
   },
   "devDependencies": {

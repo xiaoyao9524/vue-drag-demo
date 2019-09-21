@@ -1,8 +1,15 @@
 <template>
   <div id="app">
+    <div style="margin-bottom: 20px;">
+      <button @click="changeFirst">将第一个改为红色</button>
+      <button @click="add">添加拖拽</button>
+      <button @click="cancel">取消拖拽</button>
+      <button @click="testReload">reload</button>
+    </div>
     <v-s-drag
-      :watchData="list"
-      :callback="callback"
+      ref="dragComponent"
+      :observe="list"
+      @change="callback"
       animation
     >
       <ul class="list">
@@ -14,6 +21,15 @@
         >{{item.slice(0, 1).toUpperCase() + item.slice(1)}}</li>
       </ul>
     </v-s-drag>
+
+    <ul class="list">
+      <li 
+        class="item" 
+        v-for="item in list" 
+        :key="item" 
+        :style="{backgroundColor: item}"
+      >{{item.slice(0, 1).toUpperCase() + item.slice(1)}}</li>
+    </ul>
   </div>
 </template>
 
@@ -27,8 +43,24 @@ export default {
   },
   methods: {
     callback (data) {
-      console.log(data); // list数组的浅拷贝
+      console.log('cb: ', data); // list数组的浅拷贝
       this.list = data;
+    },
+    changeFirst () {
+      const list = [...this.list];
+      list[0] = 'red';
+      this.list = list;
+
+
+    },
+    testReload () {
+      this.$refs['dragComponent'].reload();
+    },
+    add () {
+      this.$refs['dragComponent'].test();
+    },
+    cancel() {
+      this.$refs['dragComponent'].destroy();
     }
   }
 };
