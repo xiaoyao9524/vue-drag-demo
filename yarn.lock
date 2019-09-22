@@ -8714,9 +8714,10 @@ uuid@^3.0.1, uuid@^3.3.2:
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.3.3.tgz?cache=0&sync_timestamp=1566221202613&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha1-RWjwIW54dg7h2/Ok0s9T4iQRKGY=
 
-"v-simple-drag@D:\\Demo\\Vue\\插件Demo\\v-simple-drag\\v-simple-drag-0.0.341.tgz":
+v-simple-drag@^0.0.341:
   version "0.0.341"
-  resolved "D:\\Demo\\Vue\\插件Demo\\v-simple-drag\\v-simple-drag-0.0.341.tgz#e3ebd209797b95243ada57a4c2ca6805868115a6"
+  resolved "https://registry.yarnpkg.com/v-simple-drag/-/v-simple-drag-0.0.341.tgz#552663f041f19d0c7fc943fde2230660486e5ed1"
+  integrity sha512-6wrAcWdjBTSxSozzRysJ5kzq3Ljd2r3IlHs8avgoE+azsCmzDvvijbv6FtwCIiwR+YJdcskANDRRnWyRPO9sWA==
   dependencies:
     "@babel/core" "^7.4.0"
     "@babel/plugin-proposal-class-properties" "^7.4.0"
